@@ -4,5 +4,8 @@ html {
 .current {
   color: green; }
 
+.logo {
+  width: 250px; }
+
 .introduction {
   color: #724640; }
