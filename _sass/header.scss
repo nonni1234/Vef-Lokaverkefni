@@ -1,5 +1,5 @@
 .logo {
-    width: 30%;
+    width: 20vw;
     height: 100%;
     //height: 4em;
 }
@@ -24,10 +24,9 @@ header {
     font-family: 'Ubuntu', sans-serif;
 }
 @media (min-width: 600px) {
-    /*
     .logo {
-        width: 20%;
-    }*/
+        width: 13vw;
+    }
 }
 @media (min-width: 1000px) {
     header {
@@ -38,5 +37,8 @@ header {
     }
     .title {
         margin: auto auto auto 20px;
+    }
+    .logo {
+        width: 9vw;
     }
 }
