@@ -1,10 +1,6 @@
+
 .navigation { 
-    grid-area: nav;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto 0;
+    
     a {
         text-decoration: none;
         font-size: 26px;
@@ -12,7 +8,64 @@
         color: rgb(29, 250, 0);
         margin: 0 10px 10px 10px;
     }
-    a:hover {
+    a:hover{
         color: #6475c0;
+    }
+    a::after {
+        content: '';
+        display: block;
+        margin-left: -5px;
+        padding-right: 10px;
+        border-radius: 1px;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(29, 250, 0);
+    }
+    a:hover::after{
+        background-color: #6475c0;
+    }
+}
+@media (max-width: 1000px){
+    .menuLabel {
+        grid-area: nav;
+        margin: auto 0;
+    
+        .menuInput:checked + .navigation {
+            left: initial;
+            right: 0;
+        }
+        .menuInput {
+            display: none; 
+            position: absolute; 
+        }
+        .menuIcon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 30px;
+        }
+    }
+
+    .navigation {
+        transition: all 10s ease-in-out; 
+        position: absolute;
+        left: 101vw;
+        width: max-content;
+        background-color: #52706C;
+        padding: 0 0 0 10px;
+        border-radius: 3px 0 0 3px;
+        
+    }
+}
+@media (min-width: 1000px){
+    .menuInput, .menuIcon {
+        display: none;
+        position: absolute;
+    }
+    .navigation {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
