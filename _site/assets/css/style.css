@@ -38,14 +38,17 @@ header {
 @media (min-width: 1000px) {
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "header nav nav nav"; }
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header label"; }
 
   .title {
     margin: auto auto auto 20px; }
 
   .logo {
     width: 9vw; } }
+.menuLabel {
+  grid-area: label; }
+
 .navigation a {
   text-decoration: none;
   font-size: 26px;
@@ -68,7 +71,6 @@ header {
 
 @media (max-width: 1000px) {
   .menuLabel {
-    grid-area: nav;
     margin: auto 0; }
     .menuLabel .menuInput:checked + .navigation {
       left: initial;
@@ -99,4 +101,5 @@ header {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    margin: auto 0; } }

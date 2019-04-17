@@ -1,4 +1,6 @@
-
+.menuLabel {
+    grid-area: label;
+}
 .navigation { 
     
     a {
@@ -27,7 +29,6 @@
 }
 @media (max-width: 1000px){
     .menuLabel {
-        grid-area: nav;
         margin: auto 0;
     
         .menuInput:checked + .navigation {
@@ -54,7 +55,7 @@
         background-color: #52706C;
         padding: 0 0 0 10px;
         border-radius: 3px 0 0 3px;
-        
+
     }
 }
 @media (min-width: 1000px){
@@ -67,5 +68,6 @@
         flex-flow: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin: auto 0;
     }
 }
