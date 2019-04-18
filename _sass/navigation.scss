@@ -2,7 +2,7 @@
     grid-area: label;
 }
 .navigation { 
-    
+    transition: right .5s ease-in-out; 
     a {
         text-decoration: none;
         font-size: 26px;
@@ -48,10 +48,11 @@
     }
 
     .navigation {
-        transition: all 10s ease-in-out; 
         position: absolute;
-        left: 101vw;
-        width: max-content;
+        //left: 101vw;
+        right: -350px;
+        //width: max-content;
+        max-width: 300px;
         background-color: #52706C;
         padding: 0 0 0 10px;
         border-radius: 3px 0 0 3px;
