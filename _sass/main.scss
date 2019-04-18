@@ -9,3 +9,19 @@ html {
 .current {
     color: green;
   }
+
+// Body layout Styles
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "leftcol content content"
+}
+
+.content {
+  grid-area: content;
+}
+.leftcol {
+  grid-area: leftcol;
+}

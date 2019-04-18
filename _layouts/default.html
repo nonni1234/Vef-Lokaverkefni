@@ -12,8 +12,11 @@
       {% include header.html %}
       {% include navigation.html %}
     </header>
-    <!--include rightcol-->
-    <!--include leftcol-->
-    {{ content }}   
+    <div class="body">
+    <div class="leftcol">
+    {% include leftcol.html %}
+    </div>
+    {{ content }} 
+  </div>  
   </body>
 </html>

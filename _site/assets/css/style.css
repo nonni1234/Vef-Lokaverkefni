@@ -9,6 +9,17 @@ html {
 .current {
   color: green; }
 
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "leftcol content content"; }
+
+.content {
+  grid-area: content; }
+
+.leftcol {
+  grid-area: leftcol; }
+
 .logo {
   width: 20vw;
   height: 100%;
