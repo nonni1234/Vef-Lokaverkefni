@@ -35,6 +35,17 @@
             left: initial;
             right: 0;
         }
+        .menuInput:checked + .navigation::before {
+            transform: rotate(90deg);
+        }
+        .navigation::before {
+            content: '@';
+            transition: transform .2s ease-in-out;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            font-size: 30px;
+        }
         .menuInput {
             display: none; 
             position: absolute; 

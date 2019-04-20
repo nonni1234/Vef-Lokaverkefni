@@ -88,6 +88,15 @@ header {
     .menuLabel .menuInput:checked + .navigation {
       left: initial;
       right: 0; }
+    .menuLabel .menuInput:checked + .navigation::before {
+      transform: rotate(90deg); }
+    .menuLabel .navigation::before {
+      content: '@';
+      transition: transform .2s ease-in-out;
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      font-size: 30px; }
     .menuLabel .menuInput {
       display: none;
       position: absolute; }
