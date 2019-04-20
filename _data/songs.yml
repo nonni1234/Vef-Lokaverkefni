@@ -1,6 +1,27 @@
-- name: blake
-  song1: song
-  song2: song2
-  song3: moosic
-- name: blake
-  song1: song2
+- nafn: john
+  lag1: African Sunrise
+  lag2: Alaska & Me
+  lag3: All This Joy
+  lag4: American Child
+  lag5: Country Roads
+
+- nafn: blake  
+  lag1: 100 Miles
+  lag2: A Girl
+  lag3: A guy with a girl
+  lag4: All about tonight
+  lag5: Gods Country
+
+- nafn: brad 
+  lag1: A man don´t have to die
+  lag2: Accidental Racist
+  lag3: 364 days to go
+  lag4: Aint nothin like
+  lag5: My miracle
+
+- nafn: bo
+  lag1: Im Bo Yo
+  lag2: Words Words Words
+  lag3: Ironic
+  lag4: Rant
+  lag5: Pandering

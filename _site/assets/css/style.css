@@ -10,8 +10,8 @@ html {
   color: green; }
 
 .body {
+  height: 100em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "leftcol content content"; }
 
 .content {
@@ -124,3 +124,9 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto 0; } }
+.lagalisti {
+  font-family: "Jua", sans-serif;
+  font-size: 1.2em; }
+
+.lag {
+  margin: 5px 0; }

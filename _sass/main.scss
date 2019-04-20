@@ -13,12 +13,11 @@ html {
 // Body layout Styles
 
 .body {
+  height: 100em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "leftcol content content"
+  "leftcol content content";
 }
-
 .content {
   grid-area: content;
 }

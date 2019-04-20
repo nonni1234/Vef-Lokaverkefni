@@ -1,0 +1,14 @@
+{% for item in site.data.songs %}
+{% if page.short_name == item.nafn %}    
+    <h2>{{ item.nafn | capitalize }}</h2>
+    <ol class="lagalisti">
+        <li class="lag" id="lag1">{{ item.lag1 }}</li>
+        <li class="lag" id="lag2">{{ item.lag2 }}</li>
+        <li class="lag" id="lag3">{{ item.lag3 }}</li>
+        <li class="lag" id="lag4">{{ item.lag4 }}</li>
+        <li class="lag" id="lag5">{{ item.lag5 }}</li>
+    </ol>
+{% endif %}
+{% endfor %}
+
+<!-- Núna þurfum við að ákveða hvernig við viljum setja þetta upp -->
